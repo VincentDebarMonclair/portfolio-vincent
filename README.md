@@ -1,5 +1,13 @@
 # 👨‍💻 Vincent Debar-Monclair - Web Developer Portfolio
 
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Accessible](https://img.shields.io/badge/Accessible-AA--WCAG?style=for-the-badge&color=green)](https://www.w3.org/WAI/)
+[![Eco-friendly](https://img.shields.io/badge/Eco--design-%F0%9F%8C%B1-green?style=for-the-badge)](https://sustainablewebdesign.org/)
+
+---
+
 Welcome to my personal portfolio website!  
 This project showcases my experience, skills, and selected web development projects.
 
