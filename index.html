@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vincent Debar-Monclair - Fullstack web developer portfolio"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">about me</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="intro">
+          <div>
+            <h1>Hi, I'm Vincent Debar-Monclair</h1>
+            <p>A human fullstack web developer</p>
+          </div>
+          <img src="./pictures/me.jpg" alt="photo de moi" loading="lazy" />
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2>My projects</h2>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="skills">
+          <img
+            src="./icons/html-5-svgrepo-com.svg"
+            alt="HTML5 Logo"
+            title="HTML5"
+          />
+
+          <img src="./icons/css-3-svgrepo-com.svg" alt="CSS Logo" title="CSS" />
+
+          <img
+            src="./icons/javascript-svgrepo-com.svg"
+            alt="JavaScript Logo"
+            title="JavaScript"
+          />
+
+          <img
+            src="./icons/nodejs-svgrepo-com.svg"
+            alt="Node.Js Logo"
+            title="Node.Js"
+          />
+
+          <img
+            src="./icons/reactts-svgrepo-com.svg"
+            alt="React Logo"
+            title="React"
+          />
+
+          <img
+            src="./icons/postgresql-svgrepo-com.svg"
+            alt="PostgreSQL Logo"
+            title="PostgreSQL"
+          />
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Get in touch</h2>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Debar-Monclair Vincent. All rights reserved.</p>
+      <div class="social-links">
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
