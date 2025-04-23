@@ -10,12 +10,8 @@
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
-
   <body>
     <header>
-      <a href="/" class="logo-link" aria-label="Landing page">
-        <img src="./pictures/logo.png" alt="Logo monogramme VDM" class="logo" />
-      </a>
       <nav>
         <ul>
           <li><a href="./about.html">about me</a></li>
@@ -30,49 +26,29 @@
       <section id="about">
         <div class="intro">
           <div>
-            <h1> &lt; coder &gt; </h1>
-            <p>Fullstack web developer</p>
+            <h1>contact.</h1>
+            <p>Get in touch with me via social media or send me an email.</p>
           </div>
           <img src="./pictures/me.jpg" alt="photo de moi" loading="lazy" />
         </div>
       </section>
 
-      <section id="experience">
-        <h2>Experience</h2>
-        <div class="skills">
-          <img
-            src="./icons/html-5-svgrepo-com.svg"
-            alt="HTML5 Logo"
-            title="HTML5"
-          />
+      <section id="contact">
+        <h2>Send me an email</h2>
+        <form action="#" method="POST" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
 
-          <img src="./icons/css-3-svgrepo-com.svg" alt="CSS Logo" title="CSS" />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
 
-          <img
-            src="./icons/javascript-svgrepo-com.svg"
-            alt="JavaScript Logo"
-            title="JavaScript"
-          />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-          <img
-            src="./icons/nodejs-svgrepo-com.svg"
-            alt="Node.Js Logo"
-            title="Node.Js"
-          />
-
-          <img
-            src="./icons/reactts-svgrepo-com.svg"
-            alt="React Logo"
-            title="React"
-          />
-
-          <img
-            src="./icons/postgresql-svgrepo-com.svg"
-            alt="PostgreSQL Logo"
-            title="PostgreSQL"
-          />
-        </div>
+          <button type="submit">Send</button>
+        </form>
       </section>
+    </main>
 
     <footer>
       <p>&copy; 2025 Debar-Monclair Vincent. All rights reserved.</p>
