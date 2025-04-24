@@ -46,10 +46,13 @@ body{
     background-color: rgb(255, 255, 255);
     color:rgb(240, 240, 240);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     
 }
 
-h1/*h2,h3,h4,h5,h6*/ {
+h1 {
     font-family: 'Proxima Nova', sans-serif;
     font-weight: bold;
     letter-spacing: -0.05em;
@@ -70,40 +73,51 @@ img {
 }
 
 /* HEADER */
-header {
+.header {
     background-color: rgb(30, 30, 30);
-    padding: 1rem 0;
-    margin-bottom: 2rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header-container {
+  margin: 0 auto;
+  padding: 0 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo-img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  border-radius: 50px;
 }
 
-.logo {
-  height: 40px; /* adapte selon ton header */
-  width: auto;
-  display: block;
+.header__nav-list {
+  display: flex;
+  list-style: none;
+  gap: 5rem;
 }
 
-.logo-link {
-  display: inline-block;
-  margin-left: 1rem;
+.header__nav-link {
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
 
-nav a {
-    text-decoration: none;
-    color: rgb(240, 240, 240);
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-nav a:focus, nav a:hover {
+.header__nav-link:focus, .header__nav-link:hover {
     color: rgb(176, 176, 176);
     transform: translateY(-3px);
   }
+
+
+/* MAIN */
+.main {
+  flex-grow: 1;
+  position: relative;
+}
 
 /* SECTIONS */
 section {
@@ -199,21 +213,24 @@ section {
 
 /* FOOTER */
 
-footer {
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background-color: rgb(245, 245, 245);
     text-align: center;
     padding: 1rem;
     color: rgb(51, 51, 51);
 }
 
-.social-links a {
+.footer__social-media {
     margin: 0 0.5rem;
     color: rgb(176, 176, 176);
     text-decoration: none;
 }
 
-.social-links a:hover,
-.social-links a:focus {
-  color: rgb(255, 255, 255);
+.footer__social-media:hover,
+.footer__social-media:focus {
+    color: rgb(255, 255, 255);
 }
 

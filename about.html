@@ -11,39 +11,57 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="./about.html">about me</a></li>
-          <li><a href="./portfolio.html">portfolio</a></li>
-          <li><a href="#experience">experience</a></li>
-          <li><a href="./contact.html">contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header-container">
+        <a href="/" class="header-logo" aria-label="Landing page">
+          <img
+            src="./pictures/logo.webp"
+            alt="Logo monogramme VDM"
+            class="header-logo-img"
+          />
+        </a>
+        <nav class="header-nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-items">
+              <a href="./about.html" class="header__nav-link">about me</a>
+            </li>
+            <li class="header__nav-items">
+              <a href="./portfolio.html" class="header__nav-link">portfolio</a>
+            </li>
+            <li class="header__nav-items">
+              <a href="#experience" class="header__nav-link">experience</a>
+            </li>
+            <li class="header__nav-items">
+              <a href="./contact.html" class="header__nav-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main>
-        <section id="about">
-          <div class="intro">
-            <div>
-              <h1>About me.</h1>
-              <h2>I'm a human padawan fullstack web developer based in France</h2>
-              <p>Since 2024,.......... When I'm not coding, you will find me working out, gardening or playing with my little boy.
-              </p>
-            </div>
-            <img src="./pictures/me.jpg" alt="photo de moi" loading="lazy" />
+    <main class="main">
+      <section id="about">
+        <div class="intro">
+          <div>
+            <h1>About me.</h1>
+            <h2>I'm a human padawan fullstack web developer based in France</h2>
+            <p>
+              Since 2024,.......... When I'm not coding, you will find me
+              working out, gardening or playing with my little boy.
+            </p>
           </div>
-        </section>
-  
-      <footer>
-        <p>&copy; 2025 Debar-Monclair Vincent. All rights reserved.</p>
-        <div class="social-links">
-          <a href=""></a>
-          <a href=""></a>
+          <img src="./pictures/me.jpg" alt="photo de moi" loading="lazy" />
         </div>
-      </footer>
-  
-      <script src="script.js"></script>
-    </body>
-  </html>
-  
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; 2025 Debar-Monclair Vincent. All rights reserved.
+      </p>
+      <a href="" class="footer__social-media">Linkedin</a>
+      <a href="" class="footer__social-media">Instagram</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
