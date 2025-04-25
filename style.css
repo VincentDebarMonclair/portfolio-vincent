@@ -56,15 +56,14 @@ h1 {
     font-family: 'Proxima Nova', sans-serif;
     font-weight: bold;
     letter-spacing: -0.05em;
-    font-size: 102px;
-    line-height: 112px;
+    font-size: 82px;
+    line-height: 90px;
     color: rgb(51, 51, 51);
     margin-bottom: 0.5em;
 }
 
 p{
-    margin-bottom: 1em;
-    color: rgb(51, 51, 51);
+    color: rgb(117, 117, 117);
 }
 
 img {
@@ -74,19 +73,22 @@ img {
 
 /* HEADER */
 .header {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(17, 17, 17);
     padding: 1rem 1rem 0.5rem 1rem;
     position: sticky;
     top: 0;
     z-index: 1;
 }
+
 .header-container {
   margin: 0 auto;
   padding: 0 30rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  width: 100%;
+  gap: 4rem;
 }
+
 .header-logo-img {
   height: 80px;
   width: 80px;
@@ -94,24 +96,47 @@ img {
   border-radius: 50px;
 }
 
+.header-nav {
+  flex-grow: 1;
+}
+
 .header__nav-list {
   display: flex;
+  justify-content: center;
   list-style: none;
   gap: 5rem;
+
 }
 
 .header__nav-link {
+  font-size: 18px;
   text-decoration: none;
   color: rgb(240, 240, 240);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-
-.header__nav-link:focus, .header__nav-link:hover {
-    color: rgb(176, 176, 176);
+.header__nav-link:hover,
+.header__nav-link:focus {
+    color: rgb(136, 136, 136);
     transform: translateY(-3px);
   }
 
+.header-socials {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .header-socials svg {
+    fill: rgb(240, 240, 240);
+    transition: fill 0.3s ease, transform 0.3s ease;
+  }
+
+  .header-socials a:hover svg,
+  .header-socials a:focus svg {
+    fill: rgb(136, 136, 136);
+    transform: translateY(-3px);
+  }
 
 /* MAIN */
 .main {
@@ -219,18 +244,29 @@ section {
     justify-content: space-around;
     background-color: rgb(245, 245, 245);
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     color: rgb(51, 51, 51);
 }
 
+.footer__copyright{
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+}
+
+.footer__copyright:hover {
+    color: rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+
 .footer__social-media {
-    margin: 0 0.5rem;
-    color: rgb(176, 176, 176);
+    color: rgb(51, 51, 51);
     text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer__social-media:hover,
 .footer__social-media:focus {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: translateY(-3px);
 }
 
