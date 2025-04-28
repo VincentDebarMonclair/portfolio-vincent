@@ -58,7 +58,6 @@ body{
     font-weight: 300;
     background-color: rgb(255, 255, 255);
     color:rgb(240, 240, 240);
-    line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -69,16 +68,20 @@ h1 {
     font-weight: bold;
     letter-spacing: -0.05em;
     font-size: 92px;
-    line-height: 90px;
     color: rgb(51, 51, 51);
-    margin-bottom: 0.5em;
+}
+
+h2 {
+  font-family:'Proxima Nova', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  color: rgb(51, 51, 51);
 }
 
 p{
-    color: rgb(117, 117, 117);
-    font-size: 24px;
+    color:  rgb(51, 51, 51);
+    font-size: 18px;
     font-weight: 200;
-    line-height: 1.3;
 }
 
 img {
@@ -161,9 +164,7 @@ img {
 }
 
 /* SECTIONS */
-section {
-    margin-bottom: 3rem;
-}
+
 
 .intro {
     display: flex;
@@ -307,6 +308,32 @@ section {
   .contact-form button:focus {
     background-color: rgb(112, 112, 112);
   }
+
+
+/* ABOUT */
+.facts {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  background-color: rgb(250, 250, 250);
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+.facts img{
+  max-width: 500px;
+}
+.random-facts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.facts-list{
+  list-style: none;
+}
+.facts-list-items {
+  color : rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 200;
+}
 
 /* FOOTER */
 
