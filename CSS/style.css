@@ -1,47 +1,9 @@
-
-/* Load Fonts locally */
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('./fonts/proximanova_light.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('./fonts/proximanova_regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('./fonts/proximanova_bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('./fonts/proximanova_extrabold.otf') format('opentype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('./fonts/Proxima-Nova-Thin.otf') format('opentype');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-  
-
 /*Reset and Base styles*/
+
+:root {
+    --color-title-paragraph: rgb(51, 51, 51);
+    
+}
 * {
     margin: 0;
     padding: 0;
@@ -49,59 +11,36 @@
 }
 
 html {
-    font-size: 100%;
+    font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
 body{
-    font-family: 'Proxima Nova', sans-serif;
-    font-weight: 300;
-    background-color: #00000000;
-    color:rgb(240, 240, 240);
     display: flex;
     flex-direction: column;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 1.6rem;
+    background-color: #00000000;
+    color:rgb(240, 240, 240);
     min-height: 100vh;
 }
 
-h1 {
-    font-family: 'Proxima Nova', sans-serif;
-    font-weight: bold;
-    letter-spacing: -0.05em;
-    font-size: 92px;
-    color: rgb(51, 51, 51);
-    margin-bottom: 16px;
+h2 {
+  color: rgb(51, 51, 51);
 }
 
-h2 {
-  font-family:'Proxima Nova', sans-serif;
-  font-weight: 300;
-  font-size: 36px;
-  color: rgb(51, 51, 51);
-  margin-bottom: 16px;
-}
 h3 {
-  font-family:'Proxima Nova', sans-serif;
-  font-weight: 200;
-  font-size: 30px;
   color: rgb(51, 51, 51);
-  margin-bottom: 24px;
 }
+
 p{
-    color:  #333333;
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 1.7;
-    margin-bottom: 30px;
+    color:  rgb(51, 51, 51);
 }
+
 strong {
-    color:  #333333;
-    font-size: 20px;
-    font-weight: 400;
+    color:  rgb(51, 51, 51);
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
+
 
 /* HEADER */
 .header {
@@ -109,15 +48,17 @@ img {
     padding: 1rem 1rem 0.5rem 1rem;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
   margin: 0 auto;
-  padding: 0 30rem;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   width: 100%;
+  max-width: 1200px;
   gap: 4rem;
 }
 
@@ -125,7 +66,7 @@ img {
   height: 80px;
   width: 80px;
   object-fit: contain;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .header-nav {
@@ -137,14 +78,13 @@ img {
   justify-content: center;
   list-style: none;
   gap: 5rem;
-
 }
 
 .header__nav-link {
-  font-size: 18px;
   text-decoration: none;
   color: rgb(240, 240, 240);
   transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
 }
 
 .header__nav-link:hover,
@@ -156,7 +96,7 @@ img {
 .header-socials {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
   }
 
   .header-socials svg {
@@ -176,19 +116,20 @@ img {
   flex-grow: 1;
   position: relative;
   box-shadow: 0px 3px 3px -1px rgb(221, 221, 221);
+  background-color: #fff;
 }
+
 #about {
-  border-bottom: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(240, 240, 240);  
 }
+
 .intro {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    text-align:left;
-    padding: 2rem 1rem;
-    
+    align-items: center;
 }
+
 .fade-in-element{
   opacity: 0;
   transform: translateX(-50px);
@@ -201,13 +142,75 @@ img {
   transform: translateX(0);
 }
 
-  .social-disc{
+.tag {
+  color: rgb(51, 51, 51);
+  font-weight: 800;
+  font-size: 7.2rem;
+}
+
+.subtitle {
+  color: rgb(85, 85, 85);
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.intro-phrase {
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .skills img:hover,
+.skills img:focus {
+  transform: scale(1.2);
+}
+
+
+/*ABOUT ME PAGE*/
+.facts {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(250, 250, 250);   
+}
+
+.random-facts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.facts-list{
+  list-style: none;
+}
+
+.facts-list-items {
+  color : rgb(51, 51, 51);
+}
+
+.story {
+  
+}
+
+
+/*CONTACT PAGE*/
+.social-disc{
     display: flex;
     gap: 2rem;
     list-style: none;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
   }
 
   .social-disc li {
@@ -219,8 +222,6 @@ img {
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 18px;
   }
 
   .icon-disc {
@@ -230,7 +231,7 @@ img {
     width: 50px;
     height: 50px;
     background-color: currentColor;
-    border-radius: 50px;
+    border-radius: 50%;
     transition: all 0.3s ease;
     overflow: hidden;
   }
@@ -243,7 +244,7 @@ img {
   .icon-disc svg {
     width: 30px;
     height: 30px;
-    fill: white;
+    fill: rgb(255, 255, 255);
     display: block;
   }
  
@@ -255,58 +256,7 @@ img {
   color: rgb(255, 30, 88); 
 }
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    
-}
-
-.skills img {
-    width: 50px;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
-
-  .skills img:hover,
-.skills img:focus {
-  transform: scale(1.1);
-}
-
-.facts {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row-reverse;
-  background-color: rgb(250, 250, 250);
-  border-bottom: 1px solid rgb(240, 240, 240);
-}
-.facts img{
-  max-width: 400px;
-}
-.random-facts{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.facts-list{
-  list-style: none;
-}
-.facts-list-items {
-  color : rgb(51, 51, 51);
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 1.7;
-}
-.story {
-  margin: 24px auto; /* je centre mon élément horizontalement */
-  max-width: 960px;
-  padding: 24px; /* espaces intérieurs */
-  width: 90%; /* pour centrer, je définis une largeur */
-}
-/*FORM Contact Page*/
+/*FORM CONTACT PAGE*/
 #contact {
   background-color: rgb(250, 250, 250);
 }
@@ -329,11 +279,13 @@ img {
     border-radius: 8px;
     padding: 0.75rem;
     color: rgb(51, 51, 51);
+    font-family: 'Proxima Nova', sans-serif;  /* Cohérence avec le reste du site */
   }
   
   .contact-form input:focus,
   .contact-form textarea:focus {
     outline: 2px solid rgb(51, 51, 51);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);  /* Effet subtil au focus */
   }
   
   .contact-form button {
@@ -345,6 +297,7 @@ img {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: 500;
   }
   
   .contact-form button:hover,
@@ -357,7 +310,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
     background: linear-gradient(45deg,rgb(245, 245, 245),rgb(230, 230, 230));
     text-align: center;
     padding: 2rem;
@@ -372,6 +325,7 @@ img {
 .footer__copyright:hover {
     color: rgb(0, 0, 0);
     transition: color 0.3s ease;
+    font-weight: 400;
 }
 
 .footer-socials {

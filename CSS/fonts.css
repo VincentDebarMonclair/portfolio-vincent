@@ -1,0 +1,45 @@
+
+
+/* Load Fonts locally */
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./Fonts/Proxima\ Nova\ Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./Fonts/Proxima\ Nova\ Alt\ Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('./Fonts/ProximaNova-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('./Fonts/Proxima\ Nova\ Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Proxima Nova';
+    src: url('./Fonts/Proxima\ Nova\ Extrabold.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  
