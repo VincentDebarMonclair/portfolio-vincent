@@ -83,7 +83,8 @@
 
     <main class="main">
       <section class="main-intro">
-        <article class="intro fade-in-element">
+        <div class="container intro-wrapper">
+          <article class="intro fade-in-element">
             <h1 class="intro-tag">contact.</h1>
             <p class="intro-phrase">Get in touch with me via social media or send me an email.</p>
           <ul class="social-disc">
@@ -140,22 +141,26 @@
             </li>
           </ul>
         </div>
+        </div>
       </section>
 
       <section id="contact">
-        <h2>Send me an email</h2>
-        <form action="#" method="POST" class="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit">Send</button>
-        </form>
+        <div class="container">
+          <h2>Send me an email</h2>
+          <form action="#" method="POST" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+  
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+  
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+  
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        
       </section>
     </main>
 

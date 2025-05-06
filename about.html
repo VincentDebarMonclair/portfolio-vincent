@@ -83,100 +83,70 @@
 
     <main class="main">
       <section class="main-intro">
-        <article class="intro fade-in-element">
-          <h1 class="intro-tag">about me.</h1>
-          <h2 class="intro-subtitle">
-            I'm a human padawan fullstack web developer based in France.
-          </h2>
-          <p class="intro-phrase">
-            Driven by a passion for learning and creating, I decided in 2024 to
-            shift my career path toward the world of web development.
-            <br />
-            Because code doesn't tell the whole story, here are a few fun facts
-            you might enjoy! <br />
-            When I'm not coding, you'll probably find me working out, caring for
-            my plants, or playing with my little boy.
-          </p>
-        </article>
-        <img
-          class="main-image"
-          src="./pictures/me.webp"
-          alt="Photo of me"
-          loading="lazy"
-        />
-      </section>
-      <section class="facts">
-        <article class="facts-elements">
+        <div class="container intro-wrapper">
+          <article class="intro fade-in-element">
+            <h1 class="intro-tag">about me.</h1>
+            <h2 class="intro-subtitle">
+              I'm a human padawan fullstack web developer based in France.
+            </h2>
+            <p class="intro-phrase">
+              Driven by a passion for learning and creating, I decided in 2024
+              to shift my career path toward the world of web development.
+              <br />
+              Because code doesn't tell the whole story, here are a few fun
+              facts you might enjoy! <br />
+              When I'm not coding, you'll probably find me working out, caring
+              for my plants, or playing with my little boy.
+            </p>
+          </article>
+
           <img
-            src="./pictures/facts.webp"
-            alt="Bruce Lee and Neo fighting"
+            class="main-image fade-in-element fade-in-right"
+            src="./pictures/me.webp"
+            alt="Photo of me"
             loading="lazy"
           />
-          <div class="random-facts">
-            <h3>Random facts</h3>
-            <ul class="facts-list">
-              <li class="facts-list-items">
-                I never start my day without coffee.
-              </li>
-              <li class="facts-list-items">Sport keeps me energized.</li>
-              <li class="facts-list-items">
-                I'm secretly proud of my growing jungle of houseplants.
-              </li>
-              <li class="facts-list-items">
-                Playing with my little boy beats any coding session.
-              </li>
-              <li class="facts-list-items">
-                I'm slightly obsessed with minimalistic design.
-              </li>
-              <li class="facts-list-items">
-                My dream workspace would have mountains views (and fast Wi-Fi,
-                obviously).
-              </li>
-              <li class="facts-list-items">
-                Bruce Lee and Neo are my mentors.
-              </li>
-            </ul>
-          </div>
-        </article>
+        </div>
+      </section>
+      <section class="facts">
+        <div class="container">
+          <article class="facts-elements">
+            <img
+              class="fade-in-element"
+              src="./pictures/facts.webp"
+              alt="Bruce Lee and Neo fighting"
+              loading="lazy"
+            />
+            <div class="random-facts">
+              <h3>Random facts</h3>
+              <ul class="facts-list">
+                <li class="facts-list-items">
+                  I never start my day without coffee.
+                </li>
+                <li class="facts-list-items">Sport keeps me energized.</li>
+                <li class="facts-list-items">
+                  I'm secretly proud of my growing jungle of houseplants.
+                </li>
+                <li class="facts-list-items">
+                  Playing with my little boy beats any coding session.
+                </li>
+                <li class="facts-list-items">
+                  I'm slightly obsessed with minimalistic design.
+                </li>
+                <li class="facts-list-items">
+                  My dream workspace would have mountains views (and fast Wi-Fi,
+                  obviously).
+                </li>
+                <li class="facts-list-items">
+                  Bruce Lee and Neo are my mentors.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <!--<section id="skills">
-      <h2>My skills</h2>
-      <div class="skills">
-        <img
-          src="./icons/html-5-svgrepo-com.svg"
-          alt="HTML5 Logo"
-          title="HTML5"
-        />
-
-        <img src="./icons/css-3-svgrepo-com.svg" alt="CSS Logo" title="CSS" />
-
-        <img
-          src="./icons/javascript-svgrepo-com.svg"
-          alt="JavaScript Logo"
-          title="JavaScript"
-        />
-
-        <img
-          src="./icons/nodejs-svgrepo-com.svg"
-          alt="Node.Js Logo"
-          title="Node.Js"
-        />
-
-        <img
-          src="./icons/reactts-svgrepo-com.svg"
-          alt="React Logo"
-          title="React"
-        />
-
-        <img
-          src="./icons/postgresql-svgrepo-com.svg"
-          alt="PostgreSQL Logo"
-          title="PostgreSQL"
-        />
-      </div>
-    </section>-->
-      <section class="story">
+      <section class="story container">
         <h3>My story</h3>
         <h4>Me in a nutshell</h4>
         <p>
@@ -194,6 +164,7 @@
           quality time with my family. In short: I’m passionate about what I do,
           but I never forget to log off and enjoy the real world, too.
         </p>
+        <div class="separator"></div>
         <h4>Quick facts</h4>
         <p>
           <strong>Home town</strong> <br />
@@ -220,11 +191,13 @@
         </p>
         <p>
           <strong>Favorite quote</strong> <br />
-          <q
-            >Be like flowing water. It falls drop by drop, but eventually fills
-            an entire vase. <i>Bruce Lee.</i>
+          <q cite="https://www.imdb.com/fr/name/nm0000045/quotes/"
+            >Empty your mind. Become formless and shapeless like water. When
+            water is poured into a cup, it becomes the cup. When water is poured
+            into a teapot, it becomes the teapot. <i>Bruce Lee.</i>
           </q>
         </p>
+        <div class="separator"></div>
         <h4>How I got into dev</h4>
         <p>
           My journey into web development began with a simple question: “What if
