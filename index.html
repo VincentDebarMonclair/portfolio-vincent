@@ -14,6 +14,7 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="header-container">
         <a href="/" class="header-logo" aria-label="Landing page">
@@ -23,6 +24,7 @@
             class="header-logo-img"
           />
         </a>
+
         <nav class="header-nav">
           <ul class="header__nav-list">
             <li class="header__nav-items">
@@ -36,7 +38,19 @@
             </li>
           </ul>
         </nav>
-        <div class="header-socials" aria-label="Liens vers mes réseaux sociaux">
+
+        <!-- BOUTON BURGER -->
+        <button
+          class="burger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <div class="header-socials" aria-label="Links to my social medias">
           <a
             href="https://www.instagram.com/naturall_around/"
             title="Follow me on Instagram"
@@ -60,7 +74,7 @@
           </a>
           <a
             href="https://www.linkedin.com/in/debar-monclair-vincent/"
-            title="Follow me on Instagram"
+            title="Follow me on LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -82,8 +96,9 @@
         </div>
       </div>
     </header>
-
+    <!-- MAIN -->
     <main class="main">
+      <!-- SECTION : Main Introduction -->
       <section class="main-intro">
         <div class="container intro-wrapper">
           <article class="intro fade-in-element">
@@ -139,11 +154,7 @@
             title="PostgreSQL"
           />
 
-          <img
-            src="./icons/git-svgrepo-com.svg"
-            alt="HTML5 Logo"
-            title="HTML5"
-          />
+          <img src="./icons/git-svgrepo-com.svg" alt="GIT Logo" title="GIT" />
         </div>
       </section>
 
@@ -160,7 +171,7 @@
         <a class="btn" href="./about.html">Read more</a>
       </section>
 
-      <!-- SECTION : Contact PSreview -->
+      <!-- SECTION : Contact Preview -->
       <section class="contact-section container">
         <h3>Let’s get in touch</h3>
         <p>
@@ -171,11 +182,12 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
       <a href="/" class="footer__copyright"
         >&copy; 2025 Debar-Monclair Vincent.</a
       >
-      <div class="footer-socials" aria-label="Liens vers mes réseaux sociaux">
+      <div class="footer-socials" aria-label="Links to my social medias">
         <a
           href="https://www.instagram.com/naturall_around/"
           title="Follow me on Instagram"
@@ -199,7 +211,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/debar-monclair-vincent/"
-          title="Follow me on Instagram"
+          title="Follow me on LinkedIn"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

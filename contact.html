@@ -21,6 +21,19 @@
             class="header-logo-img"
           />
         </a>
+
+          <!-- BOUTON BURGER -->
+        <button
+          class="burger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        
         <nav class="header-nav">
           <ul class="header__nav-list">
             <li class="header__nav-items">
@@ -34,7 +47,7 @@
             </li>
           </ul>
         </nav>
-        <div class="header-socials" aria-label="Liens vers mes réseaux sociaux">
+        <div class="header-socials" aria-label="Links to my social medias">
           <a
             href="https://www.instagram.com/naturall_around/"
             title="Follow me on Instagram"
@@ -58,7 +71,7 @@
           </a>
           <a
             href="https://www.linkedin.com/in/debar-monclair-vincent/"
-            title="Follow me on Instagram"
+            title="Follow me on LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -151,9 +164,11 @@
       </section>
 
       <section id="contact">
-        <div class="container">
+        <div class="container contact-container">
           <h2>Send me an email</h2>
-          <form action="#" method="POST" class="contact-form">
+          <form action="https://formspree.io/f/movdyrpb"
+                method="POST" 
+                class="contact-form">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required />
   
@@ -162,9 +177,14 @@
   
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-  
+
+  <!-- Champ caché pour empêcher le spam -->
+            <input type="text" name="_gotcha" style="display:none" />
+
             <button type="submit">Send</button>
           </form>
+
+          <!--<div id="form-message" role="alert" aria-live="polite"></div>-->
         </div>
         
       </section>
@@ -174,7 +194,7 @@
       <a href="/" class="footer__copyright"
         >&copy; 2025 Debar-Monclair Vincent.</a
       >
-      <div class="footer-socials" aria-label="Liens vers mes réseaux sociaux">
+      <div class="footer-socials" aria-label="Links to my social medias">
         <a
           href="https://www.instagram.com/naturall_around/"
           title="Follow me on Instagram"
@@ -198,7 +218,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/debar-monclair-vincent/"
-          title="Follow me on Instagram"
+          title="Follow me on LinkedIn"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
