@@ -25,4 +25,11 @@ const navList = document.querySelector(".header__nav-list");
 burger.addEventListener("click", () => {
   burger.classList.toggle("active");
   navList.classList.toggle("active");
+  document.body.classList.toggle(
+    "no-scroll",
+    navList.classList.contains("active")
+  );
+
+  const expanded = burger.getAttribute("aria-expanded") === "true";
+  burger.setAttribute("aria-expanded", !expanded);
 });
