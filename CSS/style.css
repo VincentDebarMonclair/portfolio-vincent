@@ -1,7 +1,22 @@
 /*Reset and Base styles*/
 
 :root {
-    --color-title-paragraph: rgb(51, 51, 51); 
+  /*COLORS*/
+  --color-title-paragraph: rgb(51, 51, 51); 
+  --color-text-secondary: rgb(117, 117, 117);
+  --color-bg-light: rgb(250, 250, 250);
+  --color-bg-dark: rgb(17, 17, 17);
+  --color-grey-light: rgb(240, 240, 240);
+  --color-grey-medium: rgb(112, 112, 112);
+  --color-grey-dark: rgb(80, 80, 80);
+
+  /*FONT*/
+  --font-main: 'Proxima Nova', sans-serif;
+  --font-size-base: 1.6rem;
+  --font-size-sm: 1.8rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3.6rem;
+  --font-size-xl: 8.2rem;
 }
 
 * {
@@ -18,14 +33,14 @@ html {
 body{
     display: flex;
     flex-direction: column;
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 1.6rem;
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
     min-height: 100vh;
 }
 
 /* HEADER */
 .header {
-    background-color: rgb(17, 17, 17);
+    background-color: var(--color-bg-dark);
     padding: 1rem 1rem 0.5rem 1rem;
     position: sticky;
     top: 0;
@@ -63,18 +78,18 @@ body{
 
 .header__nav-link {
   text-decoration: none;
-  color: rgb(240, 240, 240);
+  color: var(--color-grey-light);
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-block;
 }
 
 .header__nav-link:hover,
 .header__nav-link:focus {
-    color: rgb(136, 136, 136);
+    color: var(--color-grey-medium);
     transform: translateY(-3px);
   }
 
-/* BOUTON BURGER */
+/* BURGER BUTTON */
 .burger {
   display: none;
   flex-direction: column;
@@ -92,12 +107,12 @@ body{
 .burger-line {
   width: 100%;
   height: 3px;
-  background-color: rgb(240, 240, 240);
+  background-color: var(--color-grey-light);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
-/* Animation burger -> croix */
+/* BURGER BUTTON ANIMATION */
 .burger.active .burger-line:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -119,7 +134,7 @@ body{
      display: none;
     flex-direction: column;
     gap: 1.5rem;
-    background-color: rgb(17, 17, 17);
+    background-color: var(--color-bg-dark);
     position: absolute;
     top: 100%;
     left: 0;
@@ -145,13 +160,13 @@ body{
   }
 
   .header-socials svg {
-    fill: rgb(240, 240, 240);
+    fill: var(--color-grey-light);
     transition: fill 0.3s ease, transform 0.3s ease;
   }
 
   .header-socials a:hover svg,
   .header-socials a:focus svg {
-    fill: rgb(136, 136, 136);
+    fill: var(--color-grey-medium);
     transform: translateY(-3px);
   }
 
@@ -162,6 +177,7 @@ body{
   padding: 4rem 2rem;
   width: 100%;
 }
+
 .main {
   flex-grow: 1;
   position: relative;
@@ -170,7 +186,7 @@ body{
 }
 
 .main-intro {
-  border-bottom: 1px solid rgb(240, 240, 240); 
+  border-bottom: 1px solid var(--color-grey-light); 
 }
 
 .intro-wrapper {
@@ -204,24 +220,24 @@ body{
 }
 
 .intro-tag {
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
   font-weight: 700;
-  font-size: 8.2rem;
+  font-size: var(--font-size-xl);
   letter-spacing: -0.4rem;
   margin-bottom: 1.8rem;
 }
 
 .intro-subtitle {
-  color:rgb(117, 117, 117) ;
+  color:var(--color-text-secondary);
   font-weight: 200;
-  font-size: 2.4rem;
+  font-size: var(--font-size-md);
   margin-bottom: 2.4rem;
 }
 
 .intro-phrase {
-  font-size: 1.8rem;
+  font-size: var(--font-size-sm);
   font-weight: 300;
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
   line-height: 1.7;
   margin-bottom: 2.4rem;
 }
@@ -230,9 +246,9 @@ body{
 .download-cv h3,
 .about-preview h3,
 .contact-section h3 {
-  font-size: 3.6rem;
+  font-size: var(--font-size-lg);
   font-weight: 200;
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
   margin-bottom: 1.6rem;
 }
 
@@ -240,9 +256,9 @@ body{
 .download-cv p,
 .about-preview p,
 .contact-section p {
-  font-size: 1.8rem;
+  font-size: var(--font-size-sm);
   font-weight: 300;
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
   line-height: 1.7;
   margin-bottom: 4rem;
 }
@@ -274,8 +290,8 @@ body{
 
 /*ABOUT ME PAGE*/
 .facts {
-  background-color: rgb(250, 250, 250); 
-  border-bottom: 1px solid rgb(240, 240, 240);   
+  background-color: var(--color-bg-light); 
+  border-bottom: 1px solid var(--color-grey-light);   
 }
 
 .facts-elements {
@@ -304,9 +320,9 @@ body{
 }
 
 .random-facts h3 {
-  color:rgb(51, 51, 51) ;
+  color:var(--color-title-paragraph);
   font-weight: 200;
-  font-size: 3.6rem; 
+  font-size: var(--font-size-lg); 
   margin-bottom: 2.4rem;
 }
 
@@ -315,30 +331,30 @@ body{
 }
 
 .facts-list-items {
-  font-size: 1.8rem;
+  font-size: var(--font-size-sm);
   font-weight: 300;
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
   line-height: 2;
 }
 
 .story h3 {
   font-size: 4.8rem;
   font-weight: 300;
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
   margin-bottom: 2.4rem;
 }
 
 .story h4 {
-  font-size: 3.6rem;
+  font-size: var(--font-size-lg);
   font-weight: 200;
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
   margin-bottom: 1.6rem;
 }
 
 .story p{
-  font-size: 1.8rem;
+  font-size: var(--font-size-sm);
   font-weight: 300;
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
   line-height: 1.7;
   margin-bottom: 4rem;
 }
@@ -346,19 +362,19 @@ body{
 .story strong {
   font-weight: 700;
   line-height: 1.7;
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
 }
 
 .separator {
   width: 100%;
   height: 1px;
-  background-color: rgb(221, 221, 221);
+  background-color: var(--color-grey-light);
   margin-bottom: 2rem;
 }
 
 .about-preview p {
-  font-size: 1.8rem;
-  color: rgb(51, 51, 51);
+  font-size: var(--font-size-sm);
+  color: var(--color-title-paragraph);
   line-height: 1.7;
   margin-bottom: 2rem;
 }
@@ -366,9 +382,8 @@ body{
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  font-size: 1.6rem;
-  background-color: rgb(51, 51, 51);
-  color: #fff;
+  background-color: var(--color-bg-dark);
+  color: var(--color-grey-light);
   border: none;
   border-radius: 0.8rem;
   text-decoration: none;
@@ -376,7 +391,7 @@ body{
 }
 
 .btn:hover {
-  background-color: rgb(80, 80, 80);
+  background-color: var(--color-grey-medium);
 }
 
 .download-cv {
@@ -384,24 +399,9 @@ body{
 }
 
 .contact-section p {
-  font-size: 1.8rem;
-  color: rgb(51, 51, 51);
+  font-size: var(--font-size-sm);
+  color: var(--color-title-paragraph);
   margin-bottom: 2.4rem;
-}
-
-.contact-button {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: rgb(51, 51, 51);
-  color: white;
-  font-size: 1.6rem;
-  border-radius: 0.8rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.contact-button:hover {
-  background-color: rgb(80, 80, 80);
 }
 
 /*CONTACT PAGE*/
@@ -443,7 +443,7 @@ body{
   .icon-disc svg {
     width: 30px;
     height: 30px;
-    fill: rgb(255, 255, 255);
+    fill: var(--color-bg-light);
     display: block;
   }
  
@@ -456,15 +456,15 @@ body{
 }
 
 .container h2 {
-  font-size: 3.6rem;
+  font-size: var(--font-size-lg);
   font-weight: 200;
-  color: rgb(51, 51, 51);
+  color: var(--color-title-paragraph);
   margin-bottom: 1.6rem;
 }
 
 /*FORM CONTACT PAGE*/
 #contact {
-  background-color: rgb(250, 250, 250);
+  background-color: var(--color-bg-light);
 }
 
 .contact-form {
@@ -477,20 +477,18 @@ body{
   }
   
   .contact-form label {
-    color: rgb(0, 0, 0);
-    font-size: 1.6rem;
+    color: var(--color-bg-dark);
     margin-bottom: 0.4rem;
   }
   
   .contact-form input,
   .contact-form textarea {
-    border: 1px solid rgb(112, 112, 112);
+    border: 1px solid var(--color-grey-medium);
     border-radius: 8px;
     padding: 0.75rem;
-    color: rgb(51, 51, 51);
-    font-family: 'Proxima Nova', sans-serif; 
+    color: var(--color-title-paragraph);
+    font-family: var(--font-main); 
     margin-bottom: 1rem;
-    font-size: 1.6rem;
   }
   
   .contact-form textarea {
@@ -500,27 +498,16 @@ body{
 
   .contact-form input:focus,
   .contact-form textarea:focus {
-    outline: 2px solid rgb(51, 51, 51);
+    outline: 2px solid var(--color-title-paragraph);
     box-shadow: 0 0 10px rgba(51, 51, 51, 0.2);
   }
   
   .contact-form button {
     align-self:flex-end;
-    background-color: rgb(51, 51, 51);
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: 500;
-     font-size: 1.6rem;
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
   }
   
-  .contact-form button:hover,
-  .contact-form button:focus {
-    background-color: rgb(112, 112, 112);
-  }
 
 /* FOOTER */
 .footer {
@@ -531,34 +518,34 @@ body{
     background: linear-gradient(45deg,rgb(245, 245, 245),rgb(230, 230, 230));
     text-align: center;
     padding: 2rem;
-    color: rgb(51, 51, 51);
+    color: var(--color-bg-light);
 }
 
 .footer__copyright{
-  color: rgb(51, 51, 51);
+  color: var(--color-grey-dark);
   text-decoration: none;
 }
 
 .footer__copyright:hover {
-    color: rgb(0, 0, 0);
+    color: var(--color-bg-dark);
     transition: color 0.3s ease;
     font-weight: 400;
 }
 
 .footer-socials {
- display: flex;
+  display: flex;
   gap: 5rem;
   padding-top: 1rem;
 }
 
 .footer-socials svg {
-  fill:rgb(51, 51, 51);
+  fill:var(--color-grey-dark);
   transition: fill 0.3s ease, transform 0.3s ease;
 }
 
 .footer-socials a:hover svg,
 .footer-socials a:focus svg {
-  fill: rgb(0, 0, 0);
+  fill: var(--color-bg-dark);
   transform: translateY(-3px);
 }
 
