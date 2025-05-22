@@ -645,12 +645,12 @@ body{
   }
 
    .random-facts h3 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     margin-bottom: 1.5rem;
   }
 
    .facts-list-items {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.6;
   }
 
@@ -660,16 +660,20 @@ body{
   }
 
   .story h4 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
   }
 
   .story p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
   }
 
   /*-- RESPONSIVE CONTACT PAGE --*/
+  .container h2 {
+    font-size: 2.8rem;
+  }
+
  .contact-form {
     max-width: 100%;
     padding: 0 1rem;
@@ -678,7 +682,7 @@ body{
 
   .contact-form input,
   .contact-form textarea {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
 .social-disc {
@@ -755,7 +759,7 @@ body{
 
   .btn,
   .contact-button {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     padding: 0.8rem 1.2rem;
   }
 
@@ -778,7 +782,7 @@ body{
   }
 
   .facts-list-items {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.5;
   }
 
@@ -787,11 +791,11 @@ body{
   }
 
   .story h4 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .story p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
 /*-- RESPONSIVE CONTACT PAGE --*/
