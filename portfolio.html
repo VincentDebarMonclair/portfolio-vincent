@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./CSS/fonts.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>My Portfolio</title>
+    <link rel="icon" href="./pictures/logo.webp" type="image/webp" />
   </head>
 
   <body>
@@ -23,18 +24,7 @@
           />
         </a>
 
-        <!-- BOUTON BURGER -->
-        <button
-          class="burger"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-        >
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-        </button>
-
+        <!-- Menu navigation -->
         <nav class="header-nav">
           <ul class="header__nav-list">
             <li class="header__nav-items">
@@ -48,6 +38,19 @@
             </li>
           </ul>
         </nav>
+
+        <!-- BURGER MENU -->
+        <button
+          class="burger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="header-nav"
+        >
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+
         <div class="header-socials" aria-label="Links to my social medias">
           <a
             href="https://www.instagram.com/naturall_around/"
@@ -94,9 +97,13 @@
         </div>
       </div>
     </header>
+
+    <!-- MAIN -->
     <main class="main"></main>
+
+    <!-- FOOTER -->
     <footer class="footer">
-      <a href="/" class="footer__copyright"
+      <a href="./index.html" class="footer__copyright"
         >&copy; 2025 Debar-Monclair Vincent.</a
       >
       <div class="footer-socials" aria-label="Links to my social medias">

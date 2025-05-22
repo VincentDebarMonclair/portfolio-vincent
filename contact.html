@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="./CSS/fonts.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>My Portfolio</title>
+    <link rel="icon" href="./pictures/logo.webp" type="image/webp" />
   </head>
+
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="header-container">
-        <a href="/" class="header-logo" aria-label="Landing page">
+        <!-- Logo -->
+        <a href="./index.html" class="header-logo" aria-label="Landing page">
           <img
             src="./pictures/logo.webp"
             alt="Logo monogramme VDM"
@@ -22,18 +26,7 @@
           />
         </a>
 
-          <!-- BOUTON BURGER -->
-        <button
-          class="burger"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-          aria-controls="nav-list"
-        >
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-          <span class="burger-line"></span>
-        </button>
-        
+        <!-- Menu navigation -->
         <nav class="header-nav">
           <ul class="header__nav-list">
             <li class="header__nav-items">
@@ -47,6 +40,19 @@
             </li>
           </ul>
         </nav>
+
+          <!-- BURGER MENU -->
+        <button
+          class="burger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="header-nav"
+        >
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+
         <div class="header-socials" aria-label="Links to my social medias">
           <a
             href="https://www.instagram.com/naturall_around/"
@@ -94,7 +100,8 @@
       </div>
     </header>
 
-    <main class="main">
+    <!-- MAIN -->
+    <main class="main" tabindex="-1">
       <section class="main-intro">
         <div class="container intro-wrapper">
           <article class="intro fade-in-element">
@@ -178,20 +185,18 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-  <!-- Champ caché pour empêcher le spam -->
             <input type="text" name="_gotcha" style="display:none" />
 
             <button class="btn" type="submit">Send</button>
           </form>
-
-          <!--<div id="form-message" role="alert" aria-live="polite"></div>-->
         </div>
         
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
-      <a href="/" class="footer__copyright"
+      <a href="./index.html" class="footer__copyright"
         >&copy; 2025 Debar-Monclair Vincent.</a
       >
       <div class="footer-socials" aria-label="Links to my social medias">

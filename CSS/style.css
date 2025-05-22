@@ -530,6 +530,36 @@ body{
 
 /*  785px : Tablet and small laptops  */
 @media screen and (max-width: 785px) {
+  /*-- RESPONSIVE HEADER --*/
+  .header__nav-list {
+    /* Masquer le menu par défaut */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg-dark);
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 10;
+  }
+
+  .header__nav-list.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .header-socials {
+    display: none;
+  }
+
+  /*-- RESPONSIVE MAIN --*/
   .intro-wrapper {
     flex-direction: column;
     align-items: center;
@@ -556,26 +586,6 @@ body{
 
   .intro-phrase {
     font-size: 1.6rem;
-  }
-
-  .social-disc {
-    justify-content: center;
-    gap: 1.2rem;
-    margin-top: 2rem;
-  }
-
-   .icon-disc {
-    width: 38px;
-    height: 38px;
-  }
-
-    .icon-disc svg {
-    width: 20px;
-    height: 20px;
-  }
-
-   .social-disc span {
-    font-size: 1.3rem;
   }
 
   .skills h3,
@@ -617,6 +627,81 @@ body{
     font-size: 1.4rem;
   }
 
+/*-- RESPONSIVE ABOUT ME PAGE --*/
+  .facts-elements {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .facts-image {
+    max-width: 200px;
+    margin-bottom: 1rem;
+  }
+
+  .random-facts {
+    align-items: center;
+  }
+
+   .random-facts h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+   .facts-list-items {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+
+    .story h3 {
+    font-size: 2.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .story h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .story p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  /*-- RESPONSIVE CONTACT PAGE --*/
+ .contact-form {
+    max-width: 100%;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1.5rem;
+  }
+
+.social-disc {
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+
+   .icon-disc {
+    width: 38px;
+    height: 38px;
+  }
+
+    .icon-disc svg {
+    width: 20px;
+    height: 20px;
+  }
+
+   .social-disc span {
+    font-size: 1.3rem;
+  }
+
+/*-- RESPONSIVE  FOOTER --*/
   .footer {
     flex-direction: column;
     gap: 1.6rem;
@@ -634,59 +719,10 @@ body{
     width: 24px;
     height: 24px;
   }
-
-  .facts-elements {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .random-facts {
-    align-items: center;
-  }
-
-  .contact-form {
-    max-width: 100%;
-    padding: 0 1rem;
-    gap: 1rem;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 1.5rem;
-  }
-
-  .header__nav-list {
-    /* Masquer le menu par défaut */
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--color-bg-dark);
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    padding: 2rem 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    z-index: 10;
-  }
-
-  .header__nav-list.active {
-    display: flex;
-  }
-
-  .burger {
-    display: flex;
-  }
-
-  .header-socials {
-    display: none;
-  }
 }
 
 /*  480px : Smartphones portrait  */
+/*-- RESPONSIVE MAIN --*/
 @media screen and (max-width: 480px) {
   .intro-tag {
     font-size: 3.6rem;
@@ -723,18 +759,52 @@ body{
     padding: 0.8rem 1.2rem;
   }
 
+  .container {
+    padding: 2rem 1rem;
+  }
+
   .container h2 {
     font-size: 2.4rem;
   }
 
+  /*-- RESPONSIVE ABOUT ME PAGE --*/
+  .facts-image {
+    max-width: 120px;
+  }
+
+  .random-facts h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .facts-list-items {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .story h3 {
+    font-size: 2rem;
+  }
+
+  .story h4 {
+    font-size: 1.2rem;
+  }
+
+  .story p {
+    font-size: 1.1rem;
+  }
+
+/*-- RESPONSIVE CONTACT PAGE --*/
    .icon-disc {
     width: 30px;
     height: 30px;
   }
+
   .icon-disc svg {
     width: 16px;
     height: 16px;
   }
+
   .social-disc span {
     font-size: 1.1rem;
   }
@@ -754,6 +824,7 @@ body{
     width: 100%;
   }
 
+  /* -- RESPONSIVE FOOTER --*/
   .footer-socials svg {
     width: 20px;
     height: 20px;
